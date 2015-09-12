@@ -7,15 +7,33 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
     var window: UIWindow?
-
-
+    var session: WCSession!
+    
+//    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+//        print("Message recieved, sending connection status")
+//
+//        dispatch_async(dispatch_get_main_queue()) { () -> Void in
+//            let reachability: Reachability = Reachability.reachabilityForInternetConnection()
+//
+//            ["ConnectionStatus": reachability.isReachable()];
+//        }
+//    }
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+//        if (WCSession.isSupported()) {
+//            session = WCSession.defaultSession()
+//            session.delegate = self;
+//            session.activateSession();
+//        }
+//        
+        print("app actually fucking launched")
+        
         return true
     }
 
@@ -41,6 +59,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
 }
-

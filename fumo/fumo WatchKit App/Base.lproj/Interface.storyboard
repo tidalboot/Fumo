@@ -18,7 +18,10 @@
                         <label alignment="center" text="Fumo" id="H9P-aB-xXT">
                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                         </label>
-                        <label alignment="center" verticalAlignment="center" text="You are: " id="som-Tg-7sX">
+                        <label alignment="center" text="Your currently have:" id="Gj2-ph-3BV">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label width="2" height="2" alignment="center" verticalAlignment="center" id="som-Tg-7sX">
                             <fontDescription key="font" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="19"/>
                         </label>
                     </items>
@@ -27,6 +30,7 @@
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="280" y="238"/>
         </scene>
     </scenes>
 </document>
